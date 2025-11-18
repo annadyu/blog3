@@ -1,5 +1,6 @@
 {
   "name": "video",
+   "homepage": "https://annadyu.github.io/blog3",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "homepage": "https://annadyu.github.io/blog3"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
