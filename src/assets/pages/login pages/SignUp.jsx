@@ -93,7 +93,6 @@ const SignUp = () => {
             placeholder="Enter email"
           />
           {errors.email && <p className="error">{errors.email.message}</p>}
-
           <input
             type="password"
             {...register("password", {

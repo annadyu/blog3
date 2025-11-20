@@ -11,8 +11,6 @@ const SignIn = () => {
   const savedEmail = savedUser?.email;
   const savedPassword = savedUser?.password;
 
-   const navigate = useNavigate();
-
   const loginInfoCheck = (e) => {
     e.preventDefault();
     const newloginErrors = [];
@@ -31,8 +29,6 @@ const SignIn = () => {
       console.log("log in successufully!", { loginEmail, loginPassword });
       alert("log in successufully");
     }
-
-     navigate("/");
   };
 
   return (

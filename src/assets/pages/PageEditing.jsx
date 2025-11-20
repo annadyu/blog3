@@ -39,6 +39,7 @@ const PageEditing = () => {
   return (
     <div className="create-article">
       <form onSubmit={handleSubmit(onSubmit)} className="new-article-form">
+        <h1 className="article-edit-title">Edit your article</h1>
         <div className="new-inputs">
           <input
             className="new-input-title"
@@ -58,11 +59,11 @@ const PageEditing = () => {
           <input
             className="new-input-article"
             placeholder="Write your article here..."
-            {...register("body", { required: true, minLength: 20 })}
+            {...register("body", { required: true, minLength: 3})}
           />
           {errors.body && (
             <p className="error">
-              Article body is required (min 20 characters)
+              Article body is required (min 3 characters)
             </p>
           )}
         </div>

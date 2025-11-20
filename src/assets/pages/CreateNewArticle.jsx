@@ -57,11 +57,11 @@ const CreateNewArticle = ({ articles, setArticles }) => {
           <input
             className="new-input-article"
             placeholder="Write your article here..."
-            {...register("body", { required: true, minLength: 20 })}
+            {...register("body", { required: true, minLength: 3 })}
           />
           {errors.body && (
             <p className="error">
-              Article body is required (min 20 characters)
+              Article body is required (min 3 characters)
             </p>
           )}
         </div>

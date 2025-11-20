@@ -5,6 +5,8 @@ const Article = ({
   title,
   description,
   tags,
+  handleLike,
+  slug
 }) => {
 
   const dataToString = new Date(date).toLocaleDateString("ko-KR", {
@@ -12,6 +14,7 @@ const Article = ({
     month: "long",
     day: "numeric",
   }); 
+
   return (
     <div className="blog">
       <div className="blog-heeader">
@@ -19,9 +22,9 @@ const Article = ({
           <div className="blog-author">{author}</div>
           <div className="blog-date">{dataToString}</div>
         </div>
-        <div className="blog-likes">
+        <button onClick={() => handleLike(slug)} className="blog-likes">
           {likes}
-        </div>
+        </button>
       </div>
       <h1 className="blog-name">{title}</h1>
       <p className="blog-desc">{description}</p>
